@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompletePopupVC" customModule="iPromise" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="CompletePopupView" customModule="iPromise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POC-AP-alC">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" name="grayColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1OJ-MF-d7L">
+                    <rect key="frame" x="20" y="213" width="353" height="426"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOo-x1-p5O" customClass="LottieAnimationView" customModule="Lottie">
+                            <rect key="frame" x="20" y="0.0" width="313" height="284"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="complete-promise-json"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v73-XU-3C3">
+                            <rect key="frame" x="20" y="289" width="313" height="20.333333333333314"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="blackColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="You stayed true to your word and kept your promise! Way to go!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooz-zO-tBC">
+                            <rect key="frame" x="20" y="319.33333333333337" width="313" height="96.666666666666686"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="blackColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Ooz-zO-tBC" firstAttribute="trailing" secondItem="v73-XU-3C3" secondAttribute="trailing" id="0mm-Gu-oTP"/>
+                        <constraint firstItem="zOo-x1-p5O" firstAttribute="top" secondItem="1OJ-MF-d7L" secondAttribute="top" id="XHT-1i-Jtd"/>
+                        <constraint firstItem="Ooz-zO-tBC" firstAttribute="top" secondItem="v73-XU-3C3" secondAttribute="bottom" constant="10" id="YFA-zM-NT3"/>
+                        <constraint firstItem="Ooz-zO-tBC" firstAttribute="leading" secondItem="v73-XU-3C3" secondAttribute="leading" id="a4H-J9-vlO"/>
+                        <constraint firstAttribute="bottom" secondItem="Ooz-zO-tBC" secondAttribute="bottom" constant="10" id="bQx-I7-n5T"/>
+                        <constraint firstAttribute="trailing" secondItem="zOo-x1-p5O" secondAttribute="trailing" constant="20" id="bRM-Y4-Yf4"/>
+                        <constraint firstItem="v73-XU-3C3" firstAttribute="trailing" secondItem="zOo-x1-p5O" secondAttribute="trailing" id="box-mV-Dyb"/>
+                        <constraint firstItem="zOo-x1-p5O" firstAttribute="leading" secondItem="1OJ-MF-d7L" secondAttribute="leading" constant="20" id="d6o-f4-fgQ"/>
+                        <constraint firstItem="v73-XU-3C3" firstAttribute="top" secondItem="zOo-x1-p5O" secondAttribute="bottom" constant="5" id="hFn-ve-eul"/>
+                        <constraint firstItem="zOo-x1-p5O" firstAttribute="height" secondItem="1OJ-MF-d7L" secondAttribute="height" multiplier="1:1.5" id="txj-UL-stn"/>
+                        <constraint firstItem="v73-XU-3C3" firstAttribute="leading" secondItem="zOo-x1-p5O" secondAttribute="leading" id="wLi-Fs-5A8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1OJ-MF-d7L" secondAttribute="trailing" constant="20" id="0rP-P0-Pl6"/>
+                <constraint firstAttribute="bottom" secondItem="POC-AP-alC" secondAttribute="bottom" id="92A-H5-Wpb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="POC-AP-alC" secondAttribute="trailing" id="Aeb-zY-18a"/>
+                <constraint firstItem="1OJ-MF-d7L" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:2" id="Q6H-VA-jO4"/>
+                <constraint firstItem="1OJ-MF-d7L" firstAttribute="centerX" secondItem="POC-AP-alC" secondAttribute="centerX" id="XHV-3U-vIt"/>
+                <constraint firstItem="POC-AP-alC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="m61-UK-wH7"/>
+                <constraint firstItem="POC-AP-alC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qTE-WA-YpI"/>
+                <constraint firstItem="1OJ-MF-d7L" firstAttribute="centerY" secondItem="POC-AP-alC" secondAttribute="centerY" id="yPt-6q-vZY"/>
+                <constraint firstItem="1OJ-MF-d7L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ygx-R9-iDS"/>
+            </constraints>
+            <connections>
+                <outlet property="lblCongratulations" destination="v73-XU-3C3" id="6rT-5e-Las"/>
+                <outlet property="lblDescriptions" destination="Ooz-zO-tBC" id="udZ-hW-Ifg"/>
+                <outlet property="vwAnimation" destination="zOo-x1-p5O" id="zp2-5D-ZsC"/>
+                <outlet property="vwBack" destination="POC-AP-alC" id="d1h-6T-buB"/>
+                <outlet property="vwParent" destination="1OJ-MF-d7L" id="jhH-En-DBc"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="blackColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayColor">
+            <color red="0.68599998950958252" green="0.69800001382827759" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

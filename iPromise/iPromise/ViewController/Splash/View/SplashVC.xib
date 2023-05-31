@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashVC" customModule="iPromise" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="SplashView" customModule="iPromise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfE-6b-LKl">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="rBq-zt-xMQ">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="rBq-zt-xMQ" secondAttribute="bottom" id="1Xc-iP-Nbb"/>
+                        <constraint firstItem="rBq-zt-xMQ" firstAttribute="top" secondItem="kfE-6b-LKl" secondAttribute="top" id="V1S-qd-a3X"/>
+                        <constraint firstItem="rBq-zt-xMQ" firstAttribute="leading" secondItem="kfE-6b-LKl" secondAttribute="leading" id="rPm-4O-8fj"/>
+                        <constraint firstAttribute="trailing" secondItem="rBq-zt-xMQ" secondAttribute="trailing" id="zpC-0n-G7j"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <constraints>
+                <constraint firstItem="kfE-6b-LKl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0wa-DJ-ZlR"/>
+                <constraint firstItem="kfE-6b-LKl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="71v-ez-xJE"/>
+                <constraint firstItem="kfE-6b-LKl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VRq-AY-y6C"/>
+                <constraint firstAttribute="bottom" secondItem="kfE-6b-LKl" secondAttribute="bottom" id="coW-f9-zDP"/>
+            </constraints>
+            <connections>
+                <outlet property="imgSplash" destination="rBq-zt-xMQ" id="csB-pY-kxK"/>
+                <outlet property="vwSplash" destination="kfE-6b-LKl" id="iXJ-HF-X9T"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splash" width="390" height="844"/>
+        <namedColor name="backgroundColor">
+            <color red="0.96100002527236938" green="0.97299998998641968" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

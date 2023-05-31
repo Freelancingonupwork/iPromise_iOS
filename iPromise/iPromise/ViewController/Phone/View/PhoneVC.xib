@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mulish-Bold.ttf">
+            <string>Mulish-ExtraBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneVC" customModule="iPromise" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="PhoneView" customModule="iPromise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qe-xu-LVV">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to IPromise App" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UC-sA-wNQ">
+                            <rect key="frame" x="20" y="67" width="350" height="80.333333333333314"/>
+                            <fontDescription key="fontDescription" name="Mulish-ExtraBold" family="Mulish" pointSize="32"/>
+                            <color key="textColor" name="blackColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your phone number to Continue" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqR-wB-bdR">
+                            <rect key="frame" x="20" y="167.33333333333334" width="350" height="20.333333333333343"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="grayColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wE-iQ-Hgq">
+                            <rect key="frame" x="20" y="217.66666666666666" width="350" height="49.999999999999972"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uz9-JZ-aoO" customClass="JNPhoneNumberView" customModule="JNPhoneNumberView">
+                                    <rect key="frame" x="0.0" y="0.0" width="285" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yU-b2-WeM">
+                                    <rect key="frame" x="305" y="12.666666666666686" width="25" height="25"/>
+                                    <color key="backgroundColor" name="primaryLight"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="7ZS-Xm-zEq"/>
+                                        <constraint firstAttribute="width" constant="25" id="BBL-U3-8eA"/>
+                                    </constraints>
+                                    <color key="tintColor" name="grayColor"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="multiply" catalog="system">
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="14"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnClearClicked:" destination="-1" eventType="touchUpInside" id="gP4-hQ-ovf"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="1yU-b2-WeM" firstAttribute="leading" secondItem="Uz9-JZ-aoO" secondAttribute="trailing" constant="20" id="032-Sw-at0"/>
+                                <constraint firstItem="1yU-b2-WeM" firstAttribute="centerY" secondItem="7wE-iQ-Hgq" secondAttribute="centerY" id="MGM-JP-vzN"/>
+                                <constraint firstAttribute="height" constant="50" id="O8y-S1-RkB"/>
+                                <constraint firstAttribute="trailing" secondItem="1yU-b2-WeM" secondAttribute="trailing" constant="20" id="TdG-fw-F2H"/>
+                                <constraint firstItem="Uz9-JZ-aoO" firstAttribute="top" secondItem="7wE-iQ-Hgq" secondAttribute="top" id="edS-cY-raU"/>
+                                <constraint firstItem="Uz9-JZ-aoO" firstAttribute="leading" secondItem="7wE-iQ-Hgq" secondAttribute="leading" id="kyV-4v-Hgn"/>
+                                <constraint firstAttribute="bottom" secondItem="Uz9-JZ-aoO" secondAttribute="bottom" id="lKI-Tt-ZZk"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By clicking Continue you agree to the Terms of Use and Privacy Policy" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymZ-iF-Bmv">
+                            <rect key="frame" x="20" y="297.66666666666669" width="350" height="40.666666666666686"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="grayColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aO-3W-5M3">
+                            <rect key="frame" x="20" y="735" width="350" height="45"/>
+                            <color key="backgroundColor" name="grayColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="xE9-9r-gBa"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Continue">
+                                <color key="titleColor" name="whiteColor"/>
+                            </state>
+                            <connections>
+                                <action selector="btnContinueClicked:" destination="-1" eventType="touchUpInside" id="uqa-FC-L0y"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6UC-sA-wNQ" firstAttribute="leading" secondItem="9qe-xu-LVV" secondAttribute="leading" constant="20" id="173-wD-qlJ"/>
+                        <constraint firstItem="7wE-iQ-Hgq" firstAttribute="top" secondItem="SqR-wB-bdR" secondAttribute="bottom" constant="30" id="2W3-jC-TE5"/>
+                        <constraint firstItem="ymZ-iF-Bmv" firstAttribute="top" secondItem="7wE-iQ-Hgq" secondAttribute="bottom" constant="30" id="2gl-ZG-6X6"/>
+                        <constraint firstItem="SqR-wB-bdR" firstAttribute="top" secondItem="6UC-sA-wNQ" secondAttribute="bottom" constant="20" id="8sr-Je-V70"/>
+                        <constraint firstItem="ymZ-iF-Bmv" firstAttribute="leading" secondItem="7wE-iQ-Hgq" secondAttribute="leading" id="IHj-Ok-ehC"/>
+                        <constraint firstItem="7wE-iQ-Hgq" firstAttribute="leading" secondItem="SqR-wB-bdR" secondAttribute="leading" id="Zfz-zt-xpK"/>
+                        <constraint firstItem="7wE-iQ-Hgq" firstAttribute="trailing" secondItem="SqR-wB-bdR" secondAttribute="trailing" id="av0-sj-Xz2"/>
+                        <constraint firstItem="ymZ-iF-Bmv" firstAttribute="trailing" secondItem="7wE-iQ-Hgq" secondAttribute="trailing" id="gch-9U-wMr"/>
+                        <constraint firstAttribute="trailing" secondItem="6UC-sA-wNQ" secondAttribute="trailing" constant="20" id="iO7-Vw-7bC"/>
+                        <constraint firstItem="0aO-3W-5M3" firstAttribute="trailing" secondItem="ymZ-iF-Bmv" secondAttribute="trailing" id="nOS-7d-czX"/>
+                        <constraint firstItem="SqR-wB-bdR" firstAttribute="trailing" secondItem="6UC-sA-wNQ" secondAttribute="trailing" id="pLw-5q-lck"/>
+                        <constraint firstItem="0aO-3W-5M3" firstAttribute="leading" secondItem="ymZ-iF-Bmv" secondAttribute="leading" id="uNq-1b-OwK"/>
+                        <constraint firstItem="SqR-wB-bdR" firstAttribute="leading" secondItem="6UC-sA-wNQ" secondAttribute="leading" id="wWt-bc-BlV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <constraints>
+                <constraint firstItem="9qe-xu-LVV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="24j-jh-70P"/>
+                <constraint firstItem="9qe-xu-LVV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2hh-JI-GAF"/>
+                <constraint firstAttribute="trailing" secondItem="9qe-xu-LVV" secondAttribute="trailing" id="8zA-0g-zS7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0aO-3W-5M3" secondAttribute="bottom" constant="30" id="9Nw-dO-8rd"/>
+                <constraint firstItem="6UC-sA-wNQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="OVx-0s-EIP"/>
+                <constraint firstAttribute="bottom" secondItem="9qe-xu-LVV" secondAttribute="bottom" id="jdE-N1-Hqq"/>
+            </constraints>
+            <connections>
+                <outlet property="btnClear" destination="1yU-b2-WeM" id="42e-KQ-QbE"/>
+                <outlet property="btnContinue" destination="0aO-3W-5M3" id="bsL-5p-sxr"/>
+                <outlet property="lblBottomText" destination="ymZ-iF-Bmv" id="cdi-Mg-i90"/>
+                <outlet property="lblDescription" destination="SqR-wB-bdR" id="RGk-83-VFZ"/>
+                <outlet property="lblHeading" destination="6UC-sA-wNQ" id="YE0-ju-7Gg"/>
+                <outlet property="vwPhone" destination="Uz9-JZ-aoO" id="K1F-fN-g9V"/>
+                <outlet property="vwPhoneParent" destination="7wE-iQ-Hgq" id="Ef9-Lw-svg"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="multiply" catalog="system" width="128" height="111"/>
+        <namedColor name="backgroundColor">
+            <color red="0.96100002527236938" green="0.97299998998641968" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blackColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayColor">
+            <color red="0.68599998950958252" green="0.69800001382827759" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryLight">
+            <color red="0.83499997854232788" green="0.87800002098083496" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

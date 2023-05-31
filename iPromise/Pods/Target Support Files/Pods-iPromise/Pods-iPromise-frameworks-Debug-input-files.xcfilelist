@@ -1,0 +1,10 @@
+${PODS_ROOT}/Target Support Files/Pods-iPromise/Pods-iPromise-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AdvancedPageControl/AdvancedPageControl.framework
+${BUILT_PRODUCTS_DIR}/BubbleShowCase/BubbleShowCase.framework
+${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework
+${BUILT_PRODUCTS_DIR}/GrowingTextView/GrowingTextView.framework
+${BUILT_PRODUCTS_DIR}/JNPhoneNumberView/JNPhoneNumberView.framework
+${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework
+${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework
+${BUILT_PRODUCTS_DIR}/R.swift/RswiftResources.framework
+${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework

@@ -1,0 +1,75 @@
+PODS:
+  - AdvancedPageControl (0.9.0)
+  - BubbleShowCase (1.2.0)
+  - DropDown (2.3.13)
+  - GrowingTextView (0.7.2)
+  - JNPhoneNumberView (1.1.1):
+    - libPhoneNumber-iOS
+  - libPhoneNumber-iOS (0.9.15)
+  - MaterialComponents/AnimationTiming (124.2.0)
+  - MaterialComponents/Availability (124.2.0)
+  - MaterialComponents/private/Math (124.2.0)
+  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+Shared (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - "MaterialComponents/TextControls+Enums"
+  - "MaterialComponents/private/TextControlsPrivate+TextFields (124.2.0)":
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/TextControls+BaseTextFields (124.2.0)":
+    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+    - "MaterialComponents/private/TextControlsPrivate+TextFields"
+    - MDFInternationalization
+  - "MaterialComponents/TextControls+Enums (124.2.0)"
+  - "MaterialComponents/TextControls+OutlinedTextFields (124.2.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
+    - "MaterialComponents/TextControls+BaseTextFields"
+  - MDFInternationalization (3.0.0)
+  - R.swift (7.3.0)
+
+DEPENDENCIES:
+  - AdvancedPageControl
+  - BubbleShowCase
+  - DropDown
+  - GrowingTextView (= 0.7.2)
+  - JNPhoneNumberView
+  - "MaterialComponents/TextControls+OutlinedTextFields"
+  - R.swift
+
+SPEC REPOS:
+  trunk:
+    - AdvancedPageControl
+    - BubbleShowCase
+    - DropDown
+    - GrowingTextView
+    - JNPhoneNumberView
+    - libPhoneNumber-iOS
+    - MaterialComponents
+    - MDFInternationalization
+    - R.swift
+
+SPEC CHECKSUMS:
+  AdvancedPageControl: 39e3b32b00b2d324c534f8e17cc6c5be9abe84b7
+  BubbleShowCase: a49a216f1e1373399060c41c1c599f91b77ce6bd
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  JNPhoneNumberView: 79624eaab10a0a59fe80f737424c67dbfe380e36
+  libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
+  MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
+  MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
+  R.swift: cef1c530541cb49412752721797f10dae6b32d11
+
+PODFILE CHECKSUM: a0deba6a2395925eab4a919b2f6254d30b5d9f7c
+
+COCOAPODS: 1.12.0

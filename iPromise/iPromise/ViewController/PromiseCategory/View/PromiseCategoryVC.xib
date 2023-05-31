@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromiseCategoryVC" customModule="iPromise" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="PromiseCategoryView" customModule="iPromise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIV-IA-HBM">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6TR-TN-RD3">
+                            <rect key="frame" x="0.0" y="10" width="393" height="5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8CG-9G-PkA">
+                                    <rect key="frame" x="20" y="0.0" width="353" height="5"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient-background" translatesAutoresizingMaskIntoConstraints="NO" id="xze-XQ-ipl">
+                                            <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="5"/>
+                                            <color key="backgroundColor" name="primaryLight"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="REl-rV-xr0">
+                                            <rect key="frame" x="119.33333333333334" y="0.0" width="114.33333333333334" height="5"/>
+                                            <color key="backgroundColor" name="primaryLight"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wgn-KT-GJY">
+                                            <rect key="frame" x="238.66666666666671" y="0.0" width="114.33333333333334" height="5"/>
+                                            <color key="backgroundColor" name="primaryLight"/>
+                                        </imageView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="8CG-9G-PkA" secondAttribute="bottom" id="IZq-VF-iiH"/>
+                                <constraint firstItem="8CG-9G-PkA" firstAttribute="leading" secondItem="6TR-TN-RD3" secondAttribute="leading" constant="20" id="PTb-Jy-biT"/>
+                                <constraint firstItem="8CG-9G-PkA" firstAttribute="top" secondItem="6TR-TN-RD3" secondAttribute="top" id="ZKP-4j-iBS"/>
+                                <constraint firstAttribute="trailing" secondItem="8CG-9G-PkA" secondAttribute="trailing" constant="20" id="sKj-qv-ruN"/>
+                                <constraint firstAttribute="height" constant="5" id="vs7-Zl-z8a"/>
+                            </constraints>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Wbn-hf-Q0A">
+                            <rect key="frame" x="20" y="45" width="353" height="714"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UfN-Tb-kcg">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6TR-TN-RD3" firstAttribute="leading" secondItem="dIV-IA-HBM" secondAttribute="leading" id="5Ar-Ih-qqk"/>
+                        <constraint firstAttribute="trailing" secondItem="6TR-TN-RD3" secondAttribute="trailing" id="6mK-Kd-Bdk"/>
+                        <constraint firstAttribute="trailing" secondItem="Wbn-hf-Q0A" secondAttribute="trailing" constant="20" id="8h4-Wf-Fh0"/>
+                        <constraint firstItem="6TR-TN-RD3" firstAttribute="top" secondItem="dIV-IA-HBM" secondAttribute="top" constant="10" id="b81-rj-M2h"/>
+                        <constraint firstItem="Wbn-hf-Q0A" firstAttribute="leading" secondItem="dIV-IA-HBM" secondAttribute="leading" constant="20" id="cYp-AA-A1X"/>
+                        <constraint firstItem="Wbn-hf-Q0A" firstAttribute="top" secondItem="6TR-TN-RD3" secondAttribute="bottom" constant="30" id="kyl-dn-aeI"/>
+                        <constraint firstAttribute="bottom" secondItem="Wbn-hf-Q0A" secondAttribute="bottom" id="luR-cN-myA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dIV-IA-HBM" secondAttribute="trailing" id="8za-gw-V6t"/>
+                <constraint firstItem="dIV-IA-HBM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="oZn-8h-9Yd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dIV-IA-HBM" secondAttribute="bottom" id="sPY-sF-kFr"/>
+                <constraint firstItem="dIV-IA-HBM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="saK-oa-V2x"/>
+            </constraints>
+            <connections>
+                <outlet property="cvCategory" destination="Wbn-hf-Q0A" id="vat-bp-kRC"/>
+                <outlet property="img1" destination="xze-XQ-ipl" id="glB-6H-j69"/>
+                <outlet property="img2" destination="REl-rV-xr0" id="Tf1-ps-8th"/>
+                <outlet property="img3" destination="Wgn-KT-GJY" id="QgG-Sf-SfK"/>
+            </connections>
+            <point key="canvasLocation" x="87.786259541984734" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gradient-background" width="358" height="139"/>
+        <namedColor name="backgroundColor">
+            <color red="0.96100002527236938" green="0.97299998998641968" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryLight">
+            <color red="0.83499997854232788" green="0.87800002098083496" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
